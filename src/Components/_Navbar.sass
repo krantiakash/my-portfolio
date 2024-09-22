@@ -1,0 +1,30 @@
+.navbar
+    position: fixed
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 6.5rem
+    width: 100%
+    z-index: 99
+    padding-inline: 4rem
+
+    .logo
+        h1
+            font-size: 1.8rem
+            color: $color-white
+            span
+                color: $color-gray
+
+    .menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 5rem
+        font-size: 1.8rem
+        li
+            a
+                color: $color-gray
+                font-weight: 600
+            &.active
+                a
+                    color: $color-white

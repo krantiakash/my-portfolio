@@ -1,0 +1,65 @@
+.contact_main
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: column
+    width: 70%
+    min-height: 100vh
+    gap: 10rem
+    .heading
+        position: relative
+        height: calc( 100vh - 8rem )
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        h1
+            font-size: 10rem
+            color: $color-white
+            font-weight: 600
+        .scroll
+            color: $color-white
+            font-size: 4rem
+            position: absolute
+            bottom: 0
+            right: 10rem
+            animation: moveUpDown 2s linear infinite
+            cursor: pointer
+
+            @keyframes moveUpDown
+                0%
+                    transform: translateY(0)
+
+                50%
+                    transform: translateY(-20px)
+
+                100%
+                    transform: translateY(0)
+
+    .info
+        width: 100%
+        margin-top: 10rem
+        .title
+            color: $color-white
+            padding: 5rem 0 2rem 5rem
+        .info_area
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            gap: 10rem
+            margin-top: 5rem
+            .area
+                flex: 1
+                display: flex
+                flex-flow: column
+                text-align: center
+                justify-content: center
+                gap: 1rem
+                border: 2px solid $color-light
+                padding: 5rem
+                .bx
+                    color: $color-orange
+                    font-size: 5rem
+                .icon_title
+                    color: $color-white
+                .icon_details
+                    color: $color-gray
